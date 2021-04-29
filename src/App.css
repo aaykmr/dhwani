@@ -1,38 +1,121 @@
-.App {
+.App-header{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    /* border-radius: 0 0 30px 30px; */
+    box-shadow: 5px 10px 15px #888888;
+    clear: both;
+  
+}
+.App-logo{
+  margin: 20px;
+  width: 146px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  
+}
+.wrap{
+  float: left;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.pageName{
+  font-size: 45px;
+  font-weight: 100;
+  margin-top: 15px;
+  min-width: 150px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.linkTo{
+  
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(153, 224, 230);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table{
+  float: left;
+  clear: both;
+  position: relative;
+  width: 70%;
+  left:15%;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 22px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tdata{
+  border: none;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.piewrap{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  float: left;
+  position: relative;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
+.piechart{
+  width:400px;
+  height: 400px;
+  float: left;
+  position: relative;
+  margin-top: 100px;
 
-.App-link {
-  color: #61dafb;
+  align-items: center;
+
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.label1{
+  margin: 20px;
+  padding:10px;
+  border-radius: 20px;
+  background-color: #E38627;
+}
+.label2{
+  margin: 20px;
+  padding:10px;
+  border-radius: 20px;
+  background-color: #C13C37;
+}
+@media only screen and (max-width: 876px){
+  .table{
+    left: 0%;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .linkTo{
+    clear: both;
+    float: left;
+    
+  }
+  .App-header{
+    box-shadow: none;
+  }
+  
+}
+@media only screen and (max-width: 502px){
+  .App-header{
+    flex-direction: column;
+  }
+  .tdata{
+    padding: 0;
+  }
+ 
+ 
+}
+@media only screen and (max-width: 400px){
+  .piechart{
+    width: 200px;
+    height: 200px;
   }
 }

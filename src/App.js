@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
+import React from 'react';
+import { Route, Link} from 'react-router-dom';
+import First from './First'
+import Second from './Second'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+class App extends React.Component{
+  constructor(){
+    super();
+  }
+
+  componentDidMount(){
+
+  }
+
+
+
+
+  render() {
+    return (
+      <div className="App">
+        <Route exact path="/" component={First} />
+        <Route exact path="/second" component={Second} />
+      </div>
+    );
+  }
 }
 
 export default App;
